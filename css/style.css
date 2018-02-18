@@ -1,0 +1,371 @@
+body, html {
+	/*font-family: 'Raleway', sans-serif;*/
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+}
+
+@media (min-width: 1200px){
+	.container {
+	width: 1100px;
+	}
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+h2 {
+	line-height: 20px;
+	margin:  0;
+}
+
+h4 {
+	margin-bottom: 20px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #14bc00;
+}
+p{
+	font-size: 15px;
+	color: #565656;
+}
+
+a { 
+	color: #ffffff;
+	transition: all 0.8;
+}
+a:hover,
+a:focus{
+	color: #14bc00;
+	text-decoration: none;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+/* Home Style */
+#tf-home{
+	background: url(../image/01.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #ffffff;;
+}
+
+#tf-home .overlay{
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+	height: auto;
+	background-attachment: fixed;
+}
+
+.content{
+	/*padding: 15% 0 18% 0;*/
+	text-align: center;
+}
+/* Navigation */
+#tf-menu {
+	margin-bottom: 0;
+	background: transparent;
+	border: 0;
+	color: #fff !important;
+	padding: 2% 0;
+	transition: all 0.5s;
+}
+#sticky {
+    padding: 0.5ex;
+    background-color: #333;
+    color: #fff;
+    font-size: 2em;
+    border-radius: 0.5ex;
+}
+#tf-menu.stick {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
+	background: rgba(14, 14, 14, 0.98);
+	border-radius: 0;
+	padding: 1% 0;
+	border-bottom: 1px solid #14bc00;	
+}
+#tf-menu.navbar-default .navbar-nav > li > a {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+#tf-menu.navbar-default .navbar-nav > li > a:hover, 
+#tf-menu.navbar-default .navbar-nav > li > a:focus {
+	color: #14bc00;
+	background-color: transparent;
+}
+
+.logo {
+	font-family: 'Playball', cursive;
+}
+
+#tf-service{
+	padding: 7% 0; 
+}
+
+.media-left.media-middle i {
+	padding: 20px 30px 20px 0;
+	font-size: 30px;
+	color: #14bc00;
+
+}
+
+.media-body h4 {
+	margin-bottom: 20px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #14bc00
+}
+
+#tf-portfolio{
+	background: #f1f1f1;
+	padding: 5%  0 8% 0;
+	text-align: center;
+}
+
+.section-title hr{
+	border-color: #14bc00;
+	width: 60px;
+}
+
+.section-title h2{ font-weight: 700;}
+button.btn,
+a.btn {
+	margin: 15px 5px;
+	transition: all 0.5s;
+}
+button.btn.btn-primary.my-btn,
+a.btn.btn-primary.my-btn {
+	background: #14bc00;
+	border-color: transparent;
+	border-radius: 0px;
+	border-width: 2px;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+button.btn.btn-primary.my-btn:hover,
+a.btn.btn-primary.my-btn:hover{
+	background: #FFFFFF;
+	color: #14bc00;
+	border-color: transparent;
+}
+button.btn.btn-primary.my-btn.dark:hover,
+a.btn.btn-primary.my-btn.dark:hover{
+	background: #222222;
+	color: #ffffff;
+	border-color: transparent;
+}
+a.btn.btn-primary.my-btn2 {
+	background: rgba(47, 147, 123, 0);
+	border-color: #FFFFFF;
+	border-radius: 0px;
+	border-width: 2px;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: 600;
+	color: #FFFFFF;
+}
+
+a.btn.btn-primary.my-btn2:hover{
+	background-color: #14bc00;
+	color: #ffffff;
+	border-color: transparent;
+}
+
+ul.cat.list-inline li a {
+	border: 1px solid #14bc00;
+	padding: 5px 15px;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #14bc00;
+	transition: all 0.5s;
+}
+
+ul.cat.list-inline li a:hover{
+	background: #14bc00;
+	color: #ffffff;
+}
+
+.space{ padding: 20px}
+.toppadding{ padding-top: 30px}
+.nopadding{ padding:  0;}
+
+#tf-about{
+	background: url(../image/007.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	color: #222222;
+}
+
+#tf-about .overlay{
+	height: auto;
+	background-attachment: fixed;
+	padding: 10% 0;
+}
+
+#tf-why-me{
+	background: url(../image/010.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	color: #222222;
+}
+
+#tf-why-me .overlay{
+	height: auto;
+	background-attachment: fixed;
+	padding: 5% 0;
+}
+ul.why-me li{
+	margin: 10px 0;
+}
+#tf-contact{
+	background: url(../image/08.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	padding: 5% 0;
+	text-align: center;
+}
+
+form#contact {
+	padding: 5%;
+	background: #f1f1f1;
+	outline: 6px solid rgba(34, 34, 34, 0.08);
+}
+
+#tf-contact input.form-control {
+	height: 40px;
+}
+
+#tf-contact .form-control{
+	display: block;
+	width: 100%;
+	margin-bottom: 4px;
+	padding: 16px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #FFF;
+	background-image: none;
+	border: 1px solid #FFF;
+	border-radius: 0;
+	border: 2px solid #14bc00;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: all 0.8s;
+}
+#tf-contact .form-control:focus,
+#tf-contact .form-control:hover{
+	border-top: 2px solid #14bc00;
+}
+nav#tf-footer {
+	background: #222222;
+	padding: 3% 0 2% 0;
+	color: #f1f1f1;
+}
+
+.navbar-collapse {
+	border-top: 0;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #74c52d;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #585858;
+}
+
+.navbar-toggle {
+	border-radius: 0;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: #272727;
+}
+
+.parsley-errors-list.filled {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    color: #ff4141;
+}
+
+#logo img {
+	width: 150px;
+}
+
+/*modal*/
+#msContact .modal-dialog {
+    margin-top: 9em;
+}
+
+#msContact .modal-content {
+    border-radius: 0;
+    max-width: 360px;
+    margin: auto;
+    /* border-color: #101010; */
+}
+
+div#noSend {
+	color: red;
+}
+
+.main-title {
+	text-transform: uppercase;
+	padding: 0.4em;
+	border-radius: 15px;
+	background: #9cff0063;
+	background: #be00b78a;
+}
+
+.main-title h1 {
+	margin: 10px 0;
+}
+
+.main-image img {
+	display: inline-block;
+	/*width: 24%;*/
+}
+
+.main-image {
+	/*background: red;*/
+}
